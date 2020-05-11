@@ -13,7 +13,6 @@
           flex-direction: column;
   width: 200px;
   padding: 30px 14px 15px;
-  margin: 0 24px 50px;
   border: 1px solid #f3f3f3;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -167,26 +166,20 @@ body {
       background: #00acdc;
       border-radius: 8px; }
 
-body {
-  margin: 0; }
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+body {
+  margin: 0; }
+
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 50px 48px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 50px auto; }
-  .main .section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+  margin-top: 50px; }
 
 /*# sourceMappingURL=main.css.map */
